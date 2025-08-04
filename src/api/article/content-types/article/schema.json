@@ -19,10 +19,6 @@
       "type": "string",
       "required": true
     },
-    "Contenu": {
-      "type": "blocks",
-      "required": true
-    },
     "PhotoCouverture": {
       "type": "media",
       "multiple": false,
@@ -37,6 +33,9 @@
       "required": true,
       "default": 0,
       "min": 0
+    },
+    "Contenu": {
+      "type": "richtext"
     }
   }
 }
