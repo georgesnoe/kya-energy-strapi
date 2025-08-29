@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photos_de_groupes",
+  "info": {
+    "singularName": "photos-de-groupe",
+    "pluralName": "photos-de-groupes",
+    "displayName": "Photos-de-groupe"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

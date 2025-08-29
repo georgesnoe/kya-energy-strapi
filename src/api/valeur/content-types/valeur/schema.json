@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "valeurs",
+  "info": {
+    "singularName": "valeur",
+    "pluralName": "valeurs",
+    "displayName": "Valeur"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    }
+  }
+}

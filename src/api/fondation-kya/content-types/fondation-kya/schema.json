@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "fondation_kyas",
+  "info": {
+    "singularName": "fondation-kya",
+    "pluralName": "fondation-kyas",
+    "displayName": "FondationKya"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": false
+    }
+  },
+  "attributes": {
+    "VideoDeGarde": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "VideoDePresentation": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "LettreEngagement": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    }
+  }
+}

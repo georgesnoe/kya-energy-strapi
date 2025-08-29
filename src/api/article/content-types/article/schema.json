@@ -11,31 +11,31 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Date": {
+    "date": {
       "type": "date",
       "required": true
     },
-    "Titre": {
+    "titre": {
       "type": "string",
       "required": true
     },
-    "PhotoCouverture": {
+    "photoCouverture": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
-        "images",
-        "files"
+        "images"
       ]
     },
-    "Like": {
+    "like": {
       "type": "integer",
       "required": true,
       "default": 0,
       "min": 0
     },
-    "Contenu": {
-      "type": "richtext"
+    "contenu": {
+      "type": "richtext",
+      "required": true
     }
   }
 }

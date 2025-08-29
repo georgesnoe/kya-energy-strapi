@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pourquoi_certifications",
+  "info": {
+    "singularName": "pourquoi-certification",
+    "pluralName": "pourquoi-certifications",
+    "displayName": "Pourquoi-certification"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "icone": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "texte": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    }
+  }
+}
