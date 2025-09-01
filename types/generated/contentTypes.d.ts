@@ -1363,6 +1363,24 @@ export interface ApiYoutubeVideoYoutubeVideo extends Struct.SingleTypeSchema {
       'oneToMany',
       'api::youtube-video.youtube-video'
     >;
+    point_cle_1: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    point_cle_2: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    point_cle_3: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     publishedAt: Schema.Attribute.DateTime;
     texte_descriptif: Schema.Attribute.RichText &
       Schema.Attribute.Required &
