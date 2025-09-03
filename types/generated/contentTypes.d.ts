@@ -414,6 +414,35 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiConfianceConfiance extends Struct.CollectionTypeSchema {
+  collectionName: 'confiances';
+  info: {
+    displayName: 'Confiance';
+    pluralName: 'confiances';
+    singularName: 'confiance';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::confiance.confiance'
+    > &
+      Schema.Attribute.Private;
+    logo: Schema.Attribute.Media<'images'>;
+    nom_de_entreprise: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiConfigurationConfiguration extends Struct.SingleTypeSchema {
   collectionName: 'configurations';
   info: {
@@ -560,13 +589,6 @@ export interface ApiImpactImpact extends Struct.CollectionTypeSchema {
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::impact.impact'>;
     publishedAt: Schema.Attribute.DateTime;
-    sousTitre: Schema.Attribute.String &
-      Schema.Attribute.Required &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     statistique: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
@@ -1912,6 +1934,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::article.article': ApiArticleArticle;
+      'api::confiance.confiance': ApiConfianceConfiance;
       'api::configuration.configuration': ApiConfigurationConfiguration;
       'api::faq.faq': ApiFaqFaq;
       'api::fondation-kya.fondation-kya': ApiFondationKyaFondationKya;
