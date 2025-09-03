@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "confiances",
+  "info": {
+    "singularName": "confiance",
+    "pluralName": "confiances",
+    "displayName": "Confiance"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom_de_entreprise": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
